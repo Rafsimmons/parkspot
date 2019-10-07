@@ -1,4 +1,5 @@
 form.signup,
-form.login {
+form.login,
+form.reserve {
   margin-top: 50px;
 }
