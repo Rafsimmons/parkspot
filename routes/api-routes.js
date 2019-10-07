@@ -29,7 +29,7 @@ module.exports = function (app) {
   // Route for reserving a parking spot.
   // otherwise send back an error
   app.post("/api/reserve", function (req, res) {
-    db.User.create({
+    db.Spot.create({
       owner: req.body.owner,
       car: req.body.car,
       license: req.body.license

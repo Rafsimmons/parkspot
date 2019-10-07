@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "Majinboo1",
+    "password": "password",
     "database": "users_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "parking": {
     "username": "root",
-    "password": "Majinboo1",
+    "password": "password",
     "database": "Reserve",
     "host": "127.0.0.1",
     "dialect": "mysql"
