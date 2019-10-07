@@ -62,4 +62,20 @@ module.exports = function (app) {
       });
     }
   });
+
+  // Route for getting some data about our reservations, this will be used on the client side 
+  app.get("/api/user_reservations", function (req, res) {
+    if (!req.user) {
+      // The space is available in, send back an empty object
+      res.json({});
+    } else {
+      // Otherwise send back the owner's spot, name, car, and license
+      res.json({
+        spot: req.user.id,
+        owner: req.user.owner,
+        car: req.user.car,
+        license: req.user.license
+      });
+    }
+  });
 };
