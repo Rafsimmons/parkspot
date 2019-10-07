@@ -6,10 +6,10 @@
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
-  "test": {
+  "parking": {
     "username": "root",
-    "password": null,
-    "database": "database_test",
+    "password": "Majinboo1",
+    "database": "Reserve",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
