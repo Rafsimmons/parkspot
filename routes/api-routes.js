@@ -22,6 +22,7 @@ module.exports = function (app) {
         res.redirect(307, "/api/login");
       })
       .catch(function (err) {
+        console.log("HI IM THE ERROR: " + err)
         res.status(401).json(err);
       });
   });
@@ -29,15 +30,23 @@ module.exports = function (app) {
   // Route for reserving a parking spot.
   // otherwise send back an error
   app.post("/api/reserve", function (req, res) {
+
+    console.log("hitting reserve post req" + req.body)
+
+    var currEmail = req.user.email
+
     db.Spot.create({
       owner: req.body.owner,
       car: req.body.car,
-      license: req.body.license
+      license: req.body.license,
+      email: currEmail
     })
       .then(function () {
-        res.redirect(307, "/api/reserve");
+        // res.redirect(307, "/api/reserve");
       })
       .catch(function (err) {
+        console.log("HI IM THE ERROR: " + err)
+
         res.status(401).json(err);
       });
   });
@@ -65,17 +74,75 @@ module.exports = function (app) {
 
   // Route for getting some data about our reservations, this will be used on the client side 
   app.get("/api/user_reservations", function (req, res) {
-    if (!req.user) {
-      // The space is available in, send back an empty object
-      res.json({});
-    } else {
-      // Otherwise send back the owner's spot, name, car, and license
-      res.json({
-        spot: req.user.id,
-        owner: req.user.owner,
-        car: req.user.car,
-        license: req.user.license
-      });
+
+    db.Spot.findAll({}).then(function (dbSpot) {
+      // We have access to the todos as an argument inside of the callback function
+      res.json(dbSpot);
+    });
+
+  });
+
+  app.delete("/api/reservations/:id", function (req, res) {
+    // We just have to specify which todo we want to destroy with "where"
+
+    var loggedInEmail = req.user.email
+    var entryTryingToDeleteEmail = ""
+    var deleteRecordID = req.params.id
+    var stuff_i_want = '';
+    var mysql = require("mysql");
+
+
+    var connection = mysql.createConnection({
+      host: "localhost",
+      port: 3306,
+      user: "root",
+      password: "password",
+      database: "project2"
+    });
+
+    connection.connect(function(err) {
+      if (err) {
+        console.error("error connecting: " + err.stack);
+        return;
+      }
+      console.log("connected as id " + connection.threadId);
+    });
+
+    get_info(function (result) {
+      stuff_i_want = result;
+
+      console.log("styff i want: " + stuff_i_want)
+
+      entryTryingToDeleteEmail = stuff_i_want
+      //rest of your code goes in here
+
+      if (loggedInEmail == entryTryingToDeleteEmail) {
+        db.Spot.destroy({
+          where: {
+            id: req.params.id
+          }
+        }).then(function (dbTodo) {
+          res.json(dbTodo);
+        });
+      } else {
+        console.log("you messed up")
+      }
+    });
+
+    function get_info(callback) {
+
+      var sql = "SELECT email FROM spots WHERE id = " + deleteRecordID;
+
+      connection.query(sql, function (err, results) {
+        if (err) {
+          throw err;
+        }
+        console.log("results: " + JSON.stringify(results)); // good
+        stuff_i_want = results[0].email;  // Scope is larger than function
+
+        return callback(stuff_i_want);
+      })
     }
+
   });
 };
