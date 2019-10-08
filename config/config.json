@@ -2,14 +2,22 @@
   "development": {
     "username": "root",
     "password": "password",
+<<<<<<< Updated upstream
     "database": "users_db",
+=======
+    "database": "project2",
+>>>>>>> Stashed changes
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "parking": {
     "username": "root",
     "password": "password",
+<<<<<<< Updated upstream
     "database": "Reserve",
+=======
+    "database": "project2",
+>>>>>>> Stashed changes
     "host": "127.0.0.1",
     "dialect": "mysql"
   },

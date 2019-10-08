@@ -12,7 +12,7 @@ $(document).ready(function () {
         var resData = {
             owner: ownerInput.val().trim(),
             car: carInput.val().trim(),
-            license: licenseInput.val().trim(),
+            license: licenseInput.val().trim()
         };
 
         if (!resData.owner || !resData.car || !resData.license) {
@@ -31,7 +31,8 @@ $(document).ready(function () {
         $.post("/api/reserve", {
             owner: owner,
             car: car,
-            license: license
+            license: license,
+            current: true
         })
             .then(function () {
                 window.location.replace("/members");
