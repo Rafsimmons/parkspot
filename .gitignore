@@ -1,0 +1,17 @@
+# Build and Release Folders
+bin-debug/
+bin-release/
+node_modules/
+readme-md-generator-master/
+sequelize-passport/
+Parkspot-ob/
+
+# Other files and folders
+.settings/
+.DS_Store
+.env
+config.json
+
+# Executables
+*.exe
+*.dmg
