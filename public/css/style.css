@@ -351,3 +351,17 @@ p {
 .credits {
   color: #999;
 }
+#signupheaderwrap{
+  background-color: #fbfcfe;
+}
+#signupheaderwrap h1 {
+	font-weight: 100;
+	font-size: 70px;
+}
+
+#signupheaderwrap h2 {
+	color: #333;
+	font-size: 22px;
+  font-weight: 300;
+  margin-top: 80px;
+}
