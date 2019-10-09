@@ -217,7 +217,9 @@ p {
 
 #contact {
   padding: 40px 0;
-  background: #f8f8f8;
+  background: #fff;
+  border-top: 1px solid #eff0f2;
+	border-bottom: 1px solid #eff0f2;
 }
 
 #contact h3 {
@@ -372,7 +374,8 @@ p {
   font-weight: 400;
   margin-top: 80px;
 }
+
 #blackwrap span li{
-background-color: #ffffcc;
+background-color: #eee;
 width: 400px;
 }
