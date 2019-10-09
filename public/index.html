@@ -94,7 +94,7 @@
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="password-input" placeholder="Password">
               </div>
-              <button type="submit" class="btn btn-success">Log In</button>
+              <button type="submit" class="btn btn-success"><a href="../index.html#reserve">Log In</a></button>
             </form>
             <br />
             <p>Need an account? <a href="/signup.html">Sign up</a></p>
@@ -107,7 +107,7 @@
   <div id="blackwrap">
     <div class="container">
       <div class="row">
-        <h2>MAKE A RESERVATION</h2>
+        <h2 id="reserve">MAKE A RESERVATION</h2>
         <form class="reserve">
             <div class="form-group">
               <label for="owner">Owner</label>
@@ -125,7 +125,7 @@
               <label for="reservationCurrent">Reservation Current</label>
               <input type="text" class="form-control" id="current-input" placeholder="License Plate">
             </div> -->
-            <button type="submit" id="make-res" class="btn btn-default">Reserve</button>
+            <button type="submit" id="make-res" class="btn btn-success">Reserve</button>
           </form>
           <br />
         </div>
@@ -135,32 +135,6 @@
         <span class="spot-reserved"></span>
       </div>
     </div>
-
-      <div class="row" style="margin-top:15px">
-        <div class="col-md-4">
-          <div class="block">
-            <span class="fa fa-cubes"></span>
-            <h4>Feature four</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="block">
-            <span class="fa fa-folder"></span>
-            <h4>Feature five</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="block">
-            <span class="fa fa-suitcase"></span>
-            <h4>Feature six</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <div id="gwrap">
     <div class="container">
@@ -260,7 +234,13 @@
   <script src="lib/php-mail-form/validate.js"></script>
 
   <!-- Template Main Javascript File -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
   <script src="js/main.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+  <script type="text/javascript" src="js/members.js"></script>
+  <script type="text/javascript" src="js/reservations.js"></script>
+  <script type="text/javascript" src="js/signup.js"></script>
 
 </body>
 </html>
