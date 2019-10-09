@@ -127,12 +127,16 @@ $(document).ready(function () {
     var $newInputRow = $(
       [
         "<li class='list-group-item todo-item'>",
+        // "<span>",
+        "Spot [" + todo.id + "] " + "Model: " + todo.car +"<br />",
+        "Owner: " + todo.owner + "<br />", 
+        "Plate: " + todo.license + "<br />", 
+        // "</span>",
+        "</li>",
         "<span>",
-        todo.car + ", " + ", " + todo.owner + ", " + todo.license + ", " + todo.id,
-        "</span>",
         "<input type='text' class='edit' style='display: none;'>",
-        "<button class='delete btn btn-danger'>x</button>",
-        "</li>"
+        "<button class='delete btn btn-primary'>x</button>",
+        "</span>"
       ].join("")
     );
 

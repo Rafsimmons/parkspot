@@ -117,12 +117,12 @@ p {
 }
 
 #blackwrap {
-	background-color: #272729;
+	background-color: #f9f9f9;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	border-top: 1px solid #eff0f2;
 	width: 100%;
-	color: white;
+	color: #010101;
 }
 
 #blackwrap h2 {
@@ -364,4 +364,15 @@ p {
 	font-size: 22px;
   font-weight: 300;
   margin-top: 80px;
+}
+#blackwrap span {
+  
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 80px;
+}
+#blackwrap span li{
+background-color: #ffffcc;
+width: 400px;
 }
