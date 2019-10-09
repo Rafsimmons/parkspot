@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <title>PARKspot</title>
@@ -53,8 +52,8 @@
         <h1>Reserve your spot today</h1>
         <h2>For parking in the city, and not in a parking garage.</h2>
         <br /><br />
-        <a href="#" class="btn btn-success">LEARN MORE</a>
-        <a href="#" class="btn btn-transparent">GET STARTED</a>
+        <a href="../index.html#learn" class="btn btn-success">LEARN MORE</a>
+        <a href="../index.html#getstarted" class="btn btn-transparent">GET STARTED</a>
 
       </div>
     </div>
@@ -63,14 +62,11 @@
   <div class="container">
     <div class="row mt-row">
       <div class="col-md-4 col-md-offset-2">
-        <h3>HOW DOES IT WORK?</h3>
+        <h3 id="learn">HOW DOES IT WORK?</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-          galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
-          also the leap into electronic
+        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
           typesetting, remaining essentially unchanged.</p>
-        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-          recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
       </div>
 
       <div class="col-md-4">
@@ -87,22 +83,22 @@
           <img src="img/mac.png" class="img-responsive">
         </div>
         <div class="col-md-4">
-          <h3>Log into PARKspot</h3>
-          <p>Welcome to PARKspot log in to reserve your parking spot.</p>
-          <form class="login">
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="email-input" placeholder="Email">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="password-input" placeholder="Password">
-            </div>
-            <button type="submit" class="btn btn-success">Log In</button>
-          </form>
-          <br />
-          <p>Need an account? <a href="/">Sign up</a></p>
-        </div>
+            <h3 id="getstarted">Log into PARKspot</h3>
+            <p>Welcome to PARKspot log in to reserve your parking spot.</p>
+            <form class="login">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="email-input" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="password-input" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-success">Log In</button>
+            </form>
+            <br />
+            <p>Need an account? <a href="/signup.html">Sign up</a></p>
+          </div>
 
       </div>
     </div>
@@ -111,29 +107,35 @@
   <div id="blackwrap">
     <div class="container">
       <div class="row">
-        <h2>OUR FEATURES</h2>
-        <div class="col-md-4">
-          <div class="block">
-            <span class="fa fa-calendar"></span>
-            <h4>Feature one</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="block">
-            <span class="fa fa-cloud"></span>
-            <h4>Feature two</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="block">
-            <span class="fa fa-database"></span>
-            <h4>Feature three</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
+        <h2>MAKE A RESERVATION</h2>
+        <form class="reserve">
+            <div class="form-group">
+              <label for="owner">Owner</label>
+              <input type="text" class="form-control" id="owner-input" placeholder="Owner">
+            </div>
+            <div class="form-group">
+              <label for="carModel">Car</label>
+              <input type="text" class="form-control" id="car-input" placeholder="Car">
+            </div>
+            <div class="form-group">
+              <label for="licensePlate">License Plate</label>
+              <input type="text" class="form-control" id="plate-input" placeholder="License Plate">
+            </div>
+            <!-- <div class="form-group">
+              <label for="reservationCurrent">Reservation Current</label>
+              <input type="text" class="form-control" id="current-input" placeholder="License Plate">
+            </div> -->
+            <button type="submit" id="make-res" class="btn btn-default">Reserve</button>
+          </form>
+          <br />
         </div>
       </div>
+      <div class="col-md-6 col-md-offset-3">
+        <h2>Parking spots reserved</h2>
+        <span class="spot-reserved"></span>
+      </div>
+    </div>
+
       <div class="row" style="margin-top:15px">
         <div class="col-md-4">
           <div class="block">
@@ -169,14 +171,10 @@
         <div class="col-md-4">
           <h3>IMPORTANT STUFF HERE</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-            a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
-            also the leap into electronic
+          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
             typesetting, remaining essentially unchanged.</p>
-          <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
-            more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and
-            a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+          <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
           <p><a href="#" class="btn btn-success">PURCHASE NOW</a></p>
         </div>
       </div>
@@ -186,7 +184,7 @@
   <div class="container">
     <div class="row mt-row">
       <h3 style="text-align:center">TRY US NOW</h3>
-      <br />
+      <br/>
       <div class="col-md-6 col-md-offset-3">
         <form role="form" action="register.php" method="post" enctype="plain">
           <input type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..." required>
@@ -205,24 +203,20 @@
           <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
 
             <div class="form-group">
-              <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name"
-                data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
               <div class="validate"></div>
             </div>
             <div class="form-group">
-              <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email"
-                data-rule="email" data-msg="Please enter a valid email">
+              <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
               <div class="validate"></div>
             </div>
             <div class="form-group">
-              <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject"
-                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+              <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
               <div class="validate"></div>
             </div>
 
             <div class="form-group">
-              <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5"
-                data-rule="required" data-msg="Please write something for us"></textarea>
+              <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
               <div class="validate"></div>
             </div>
 
@@ -266,8 +260,7 @@
   <script src="lib/php-mail-form/validate.js"></script>
 
   <!-- Template Main Javascript File -->
-  <script src="js/login.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
-
 </html>
