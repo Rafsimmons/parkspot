@@ -85,7 +85,7 @@ $(document).ready(function () {
       console.log("clean fields")
 
       getTodos()
-      setTimeout("location.reload(true);", 5)
+      // setTimeout("location.reload(true);", 5)
 
       ownerInput.val("");
       carInput.val("");
