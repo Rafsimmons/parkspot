@@ -128,11 +128,15 @@ $(document).ready(function () {
       [
         "<li class='list-group-item todo-item'>",
         "<span>",
-        todo.car + ", " + ", " + todo.owner + ", " + todo.license + ", " + todo.id,
-        "</span>",
+        "Spot [" + todo.id + "] " + "Model: " + todo.car +"<br />",
+        "Owner: " + todo.owner + "<br />", 
+        "Plate: " + todo.license + "<br />", 
+        "<div>",
         "<input type='text' class='edit' style='display: none;'>",
-        "<button class='delete btn btn-danger'>x</button>",
-        "</li>"
+        "<button class='delete btn btn-primary'>x</button>",
+        "</div>",
+        "</li>",
+        "</span>",
       ].join("")
     );
 
