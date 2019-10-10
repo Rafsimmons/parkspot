@@ -19,7 +19,7 @@ body {
 }
 
 .navbar-inverse .navbar-brand {
-    color: #ddd;
+    color: #eee;
 }
 
 .navbar-inverse {
@@ -42,7 +42,8 @@ body {
 }
 
 #headerwrap {
-	background: url(../img/hero.jpg) no-repeat center top;
+  background: url(../img/hero.jpg) no-repeat center top;
+  background-color: #1666ba;
 	padding-top: 180px;
 	text-align:center;
 	background-attachment: relative;
@@ -100,6 +101,14 @@ h3 {
 
 p {
 	font-weight: 300;
+}
+#bwrap{
+  background-color: #bedaf7;
+  padding-top: 60px;
+	padding-bottom: 60px;
+	border-top: 1px solid #eff0f2;
+	border-bottom: 1px solid #eff0f2;
+	width: 100%;
 }
 
 #gwrap {
