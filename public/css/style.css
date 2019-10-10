@@ -103,21 +103,22 @@ p {
 	font-weight: 300;
 }
 #bwrap{
-  background-color: #bedaf7;
+  background-color: #1666ba;
   padding-top: 60px;
 	padding-bottom: 60px;
 	border-top: 1px solid #eff0f2;
 	border-bottom: 1px solid #eff0f2;
-	width: 100%;
+  width: 100%;
+  color: #eff0f2;
 }
 
 #gwrap {
-	background-color: #fbfcfe;
+	background-color: #368ce7;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	border-top: 1px solid #eff0f2;
 	border-bottom: 1px solid #eff0f2;
-	width: 100%;
+  width: 100%;
 }
 
 #gwrap .mac {
@@ -126,7 +127,7 @@ p {
 }
 
 #blackwrap {
-	background-color: #f9f9f9;
+	background-color: #bedaf7;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	border-top: 1px solid #eff0f2;
@@ -154,7 +155,7 @@ p {
 }
 
 .block .fa {
-	color: #2cce78;
+	color: #1666ba;
 	font-size: 22px;
 }
 
@@ -213,12 +214,12 @@ p {
 	position: relative;
 	border: none;
   text-transform: uppercase;
-	background: #5cb85c;
+	background: #368ce7;
   transition: 0.3s;
 }
 
 .btn-submit:hover {
-  background: #329532;
+  background: #1666ba;
   color: #fff;
 }
 
@@ -226,9 +227,9 @@ p {
 
 #contact {
   padding: 40px 0;
-  background: #fff;
+  background: #f5f9fe;
   border-top: 1px solid #eff0f2;
-	border-bottom: 1px solid #eff0f2;
+  border-bottom: 1px solid #eff0f2;
 }
 
 #contact h3 {
@@ -253,7 +254,7 @@ p {
 }
 
 .contact-form .form-send button  {
-  background: #5cb85c;
+  background: #1666ba;
   border: 0;
   padding: 12px 20px;
   color: #fff;
@@ -266,7 +267,7 @@ p {
 }
 
 .contact-form .form-send button:hover {
-  background: #329532;
+  background: #1666ba;
 }
 
 .contact-form .validate {
@@ -292,7 +293,7 @@ p {
   border-radius: 50%;
   width: 24px;
   height: 24px;
-  border: 3px solid #18d26e;
+  border: 3px solid #bedaf7;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -335,7 +336,7 @@ p {
 .contact-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #1666ba;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -385,6 +386,7 @@ p {
 }
 
 #blackwrap span li{
-background-color: #eee;
+background-color: #deecfb;
+border: 1px solid #fff;
 width: 400px;
 }
