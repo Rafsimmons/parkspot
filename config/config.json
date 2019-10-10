@@ -1,7 +1,7 @@
 {
   "parking": {
     "username": "root",
-    "password": "password",
+    "password": "Majinboo1",
     "database": "project2",
     "host": "127.0.0.1",
     "dialect": "mysql"

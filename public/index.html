@@ -54,7 +54,7 @@
         <h1>Reserve your spot today</h1>
         <h2>For parking in the city, and not in a parking garage.</h2>
         <br /><br />
-        <a href="../index.html#learn" class="btn btn-success">LEARN MORE</a>
+        <a href="../index.html#learn" class="btn btn-primary">LEARN MORE</a>
         <a href="../index.html#gwrap" class="btn btn-transparent">GET STARTED</a>
 
       </div>
@@ -62,22 +62,24 @@
     <!-- /.container -->
   </div>
   <div id="bwrap">
-  <div class="container" id="learn">
-    <div class="row mt-row">
-      <div class="col-md-4 col-md-offset-2">
-        <h3>HOW DOES IT WORK?</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-          galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
-          also the leap into electronic
-          typesetting, remaining essentially unchanged.</p>
-        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-          recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <div class="container" id="learn">
+      <div class="row mt-row">
+        <div class="col-md-4 col-md-offset-2">
+          <h3>HOW DOES IT WORK?</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+            a
+            galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+            also the leap into electronic
+            typesetting, remaining essentially unchanged.</p>
+          <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+            more
+            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="col-md-4">
+          <img class="img-responsive" src="img/d324_5-512.png">
+        </div>
       </div>
-      <div class="col-md-4">
-        <img class="img-responsive" src="img/iphones.png">
-      </div>
-    </div>
     </div>
   </div>
   <!--Container-->
@@ -85,7 +87,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 mac">
-          <img src="img/mac.png" class="img-responsive">
+          <img src="img/car4.png" class="img-responsive">
         </div>
         <div class="col-md-4">
           <h3>Log into PARKspot</h3>
@@ -99,7 +101,8 @@
               <label for="exampleInputPassword1">Password</label>
               <input type="password" class="form-control" id="password-input" placeholder="Password">
             </div>
-            <button type="submit" class="btn btn-success"><a href="../index.html#blackwrap">Log In</a></button>
+            <button type="submit" class="btn btn-success btn-md btn-block"><a href="../index.html#blackwrap">Log
+                In</a></button>
           </form>
           <br />
           <p>Need an account? <a href="/signup.html">Sign up</a></p>
@@ -112,7 +115,7 @@
   <div id="blackwrap">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 col-md-offset-2">
           <h3>Make a reservation</h3>
           <form class>
             <div class="form-group">
@@ -134,133 +137,92 @@
             <button type="submit" id="make-res" class="btn btn-success btn-md btn-block">Reserve</button>
             <p>Below are the spots that are already reserved. This lot has a total of 10 spots.</p>
           </form>
-          
+
         </div>
         <div class="col-md-4 col-md-offset-1">
-            <h3>Spots already reserved</h3>
-              <span class="spot-reserved"></span>
-          </div>
+          <h3>Spots already reserved</h3>
+          <span class="spot-reserved"></span>
         </div>
       </div>
-
     </div>
 
-    <!-- <div id="gwrap"> -->
-      <!-- <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-2">
-            <img class="img-responsive" src="img/ipad.jpg">
-          </div>
-          <div class="col-md-4">
-            <h3>IMPORTANT STUFF HERE</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-              took
-              a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-              but
-              also the leap into electronic
-              typesetting, remaining essentially unchanged.</p>
-            <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
-              more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
-              and
-              a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
-            <p><a href="#" class="btn btn-success">PURCHASE NOW</a></p>
-          </div>
-        </div>
-      </div>
-    </div> -->
+  </div>
 
-    <!-- <div class="container">
-      <div class="row mt-row">
-        <h3 style="text-align:center">TRY US NOW</h3>
-        <br />
+  <div id="contact">
+    <div class="container">
+      <div class="row">
         <div class="col-md-6 col-md-offset-3">
-          <form role="form" action="register.php" method="post" enctype="plain">
-            <input type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..."
-              required>
-            <button class='btn btn-submit subscribe-submit' type="submit">Subscribe</button>
+          <h3>Get In Touch</h3>
+          <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
+
+            <div class="form-group">
+              <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name"
+                data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email"
+                data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject"
+                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+              <div class="validate"></div>
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5"
+                data-rule="required" data-msg="Please write something for us"></textarea>
+              <div class="validate"></div>
+            </div>
+
+            <div class="loading"></div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+
+            <div class="form-send">
+              <button type="submit" class="btn btn-large">Send Message</button>
+            </div>
+
           </form>
-
-        </div>
-      </div>
-    </div> -->
-
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <h3>Contact Form</h3>
-            <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
-
-              <div class="form-group">
-                <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name"
-                  data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email"
-                  data-rule="email" data-msg="Please enter a valid email">
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject"
-                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
-                <div class="validate"></div>
-              </div>
-
-              <div class="form-group">
-                <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5"
-                  data-rule="required" data-msg="Please write something for us"></textarea>
-                <div class="validate"></div>
-              </div>
-
-              <div class="loading"></div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
-              <div class="form-send">
-                <button type="submit" class="btn btn-large">Send Message</button>
-              </div>
-
-            </form>
-
-          </div>
         </div>
       </div>
     </div>
-    <!-- / contact -->
+  </div>
 
-    <div id="copyrights">
-      <div class="container">
-        <p>
-          &copy; Copyrights <strong>GoodLanding</strong>. All Rights Reserved
-        </p>
-        <div class="credits">
-          <!--
+  <!-- / contact -->
+
+  <div id="copyrights">
+    <div class="container">
+      <p>
+        &copy; Copyrights <strong>GoodLanding</strong>. All Rights Reserved
+      </p>
+      <div class="credits">
+        <!--
           You are NOT allowed to delete the credit link to TemplateMag with free version.
           You can delete the credit link only if you bought the pro version.
           Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/goodlanding-bootstrap-landing-template/
           Licensing information: https://templatemag.com/license/
         -->
-        </div>
       </div>
     </div>
-    <!-- / copyrights -->
+  </div>
+  <!-- / copyrights -->
 
-    <!-- JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/php-mail-form/validate.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/php-mail-form/validate.js"></script>
 
-    <!-- Template Main Javascript File -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Template Main Javascript File -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <script src="js/main.js"></script>
-    <script type="text/javascript" src="js/login.js"></script>
-    <script type="text/javascript" src="js/members.js"></script>
-    <script type="text/javascript" src="js/reservations.js"></script>
-    <script type="text/javascript" src="js/signup.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+  <script type="text/javascript" src="js/members.js"></script>
+  <script type="text/javascript" src="js/reservations.js"></script>
+  <script type="text/javascript" src="js/signup.js"></script>
 
 </body>
 
